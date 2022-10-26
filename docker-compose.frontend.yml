@@ -1,0 +1,15 @@
+version: '3'
+services:
+  devabler-frontend:
+    build:
+      context: .
+      dockerfile: ./docker/Docker.frontend/Dockerfile
+    image: devabler-frontend
+    env_file: .env
+    container_name: devabler-frontend
+    volumes:
+      - ./frontend:/code/frontend
+    ports:
+      - '3000:3000'
+    expose:
+      - 3000

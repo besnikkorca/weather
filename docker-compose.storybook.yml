@@ -1,0 +1,15 @@
+version: '3'
+services:
+  devabler-storybook:
+    build:
+      context: .
+      dockerfile: ./docker/Docker.frontend.storybook/Dockerfile
+    image: devabler-storybook
+    env_file: .env
+    container_name: devabler-storybook
+    volumes:
+      - ./frontend:/code/frontend
+    ports:
+      - '3002:6006'
+    expose:
+      - 6006

@@ -1,3 +1,26 @@
+// TODO: switch colors once done
+:root {
+  --border-color: #000;
+  --primary-color: #8c511c;
+  --bg-color: #120904;
+  --font-dark: #cecdcb;
+  --font-dark-2: #cdcbc9;
+  --font-dark-3: #ccccc6;
+  --font-dark-4: #c5c5bf;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --border-color: #fff;
+    --primary-color: #73aee3;
+    --bg-color: #edf6fb;
+    --font-dark: #313234;
+    --font-dark-2: #323436;
+    --font-dark-3: #333339;
+    --font-dark-4: #3a3a40;
+  }
+}
+
 .App {
   text-align: center;
 }

@@ -1,0 +1,14 @@
+.container {
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.full {
+  width: 100%;
+  max-width: 1200px;
+  height: 100vh;
+}
+
+.bg {
+  background-color: var(--bg-color);
+}

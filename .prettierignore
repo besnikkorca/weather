@@ -3,3 +3,4 @@ package-lock.json
 */src/generated/
 __generated__
 */build/
+city.list.min.json

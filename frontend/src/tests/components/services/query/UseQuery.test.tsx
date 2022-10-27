@@ -1,10 +1,6 @@
 import { render, screen } from '@testing-library/react';
 import UseQuery from 'services/query/UseQuery';
-import * as ReactQuery from 'react-query';
-
-function mockUseQuery(implementation: (...args: any[]) => any) {
-  return jest.spyOn(ReactQuery, 'useQuery').mockImplementation(implementation);
-}
+import mockUseQuery from './mockUseQuery';
 
 describe('UseQuery', () => {
   it('should render successfully', () => {

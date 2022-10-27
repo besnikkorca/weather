@@ -3,12 +3,25 @@
   padding: 0 20px;
 }
 
+.centerContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .full {
   width: 100%;
-  max-width: 1200px;
   height: 100vh;
+}
+
+.maxWidthLarge {
+  max-width: 1200px;
 }
 
 .bg {
   background-color: var(--bg-color);
+}
+
+.border {
+  border: 6px solid var(--border-color);
 }

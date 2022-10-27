@@ -4,8 +4,9 @@ import Container from './components/atoms/Container';
 
 function App() {
   return (
-    <Container full>
-      {/* <header className="App-header">
+    <Container full centerContent>
+      <Container maxWidth border>
+        {/* <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <p>
             Edit <code>src/App.tsx</code> and save to reload.
@@ -19,6 +20,7 @@ function App() {
             Learn React
           </a>
         </header> */}
+      </Container>
     </Container>
   );
 }

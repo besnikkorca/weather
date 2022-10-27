@@ -10,12 +10,7 @@ describe('UseCityWeather', () => {
 
     const { baseElement } = render(
       <QueryClientProvider>
-        <UseCityWeather cityId={123}>
-          {(query) => {
-            console.log(`query.isLoading - `, query.isLoading);
-            return <h1>{query.data?.city.name}</h1>;
-          }}
-        </UseCityWeather>
+        <UseCityWeather cityId={123}>{(query) => <h1>{query.data?.city.name}</h1>}</UseCityWeather>
       </QueryClientProvider>
     );
 

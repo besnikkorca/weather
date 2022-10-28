@@ -1,16 +1,41 @@
 import { Component, ReactNode } from 'react';
 import Container from 'src/components/atoms/Container';
+import Header from 'src/components/molecules/Header';
 import UseCityWeather from 'src/components/services/query/helpers/UseCityWeather';
 import getCityId from 'src/utils/getCityId/getCityId';
 
-export default class WeatherPage extends Component {
+const supportedCities = [
+  {
+    name: 'Ottawa',
+    id: getCityId('Ottawa', 'CA'),
+  },
+  {
+    name: 'Moscow',
+    id: getCityId('Moscow', 'RU'),
+  },
+  {
+    name: 'Tokyo',
+    id: getCityId('Tokyo', 'JP'),
+  },
+];
+
+export default class WeatherPage extends Component<{}, { active: string }> {
+  state = {
+    active: 'Ottawa',
+  };
+
   render(): ReactNode {
-    const cityId = getCityId('Moscow', 'RU');
+    const cityId = supportedCities.find((city) => city.name === this.state.active)?.id;
+
+    const setActive = (city: string) => {
+      this.setState({ active: city });
+    };
 
     return (
-      <Container full centerContent>
-        <Container maxWidth border>
-          <UseCityWeather cityId={cityId}>
+      <Container full>
+        <Container maxWidth>
+          <Header active={this.state.active} setActive={setActive} />
+          {/* <UseCityWeather cityId={cityId}>
             {(query) =>
               query.isLoading ? (
                 <div>'Loading...' </div>
@@ -45,7 +70,7 @@ export default class WeatherPage extends Component {
                 </div>
               )
             }
-          </UseCityWeather>
+          </UseCityWeather> */}
           {/* <header className="App-header">
       <img src={logo} className="App-logo" alt="logo" />
       <p>

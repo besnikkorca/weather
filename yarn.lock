@@ -1399,6 +1399,11 @@
     minimatch "^3.1.2"
     strip-json-comments "^3.1.1"
 
+"@fontsource/montserrat@^4.5.13":
+  version "4.5.13"
+  resolved "https://registry.yarnpkg.com/@fontsource/montserrat/-/montserrat-4.5.13.tgz#58f12419c05e131b09ab17e9181aa24fb9c84b3a"
+  integrity sha512-/XlcNsMFjdWX4Away8Ax/4NgND8Ckk9gVDwgz1sfxF6h+gFHChLOV0IvPrUfCQjZ1F35igg+nR9bSxmjsYEskQ==
+
 "@gar/promisify@^1.0.1":
   version "1.1.3"
   resolved "https://registry.yarnpkg.com/@gar/promisify/-/promisify-1.1.3.tgz#555193ab2e3bb3b6adc3d551c9c030d9e860daf6"

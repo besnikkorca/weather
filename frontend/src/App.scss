@@ -2,6 +2,7 @@
 :root {
   --border-color: #000;
   --primary-color: #8c511c;
+  --secondary-color: #8c891c;
   --bg-color: #120904;
   --font-dark: #cecdcb;
   --font-dark-2: #cdcbc9;
@@ -13,6 +14,7 @@
   :root {
     --border-color: #fff;
     --primary-color: #73aee3;
+    --secondary-color: #7376e3;
     --bg-color: #edf6fb;
     --font-dark: #313234;
     --font-dark-2: #323436;
@@ -58,4 +60,8 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+ul {
+  padding-inline-start: 0;
 }

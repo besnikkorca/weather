@@ -1,9 +1,13 @@
 import { ComponentMeta, ComponentStory } from '@storybook/react';
-import Header from 'molecules/Header';
+import Header from 'src/components/organisms/Header';
 
 export default {
-  title: 'Molecules/Header',
+  title: 'Organisms/Header',
   component: Header,
+  active: {
+    control: { type: 'select' },
+    options: ['Ottawa', 'Moscow', 'Tokyo'],
+  },
 } as ComponentMeta<typeof Header>;
 
 const Template: ComponentStory<typeof Header> = (args) => <Header {...args} />;

@@ -1,5 +1,5 @@
 import { screen, render } from '@testing-library/react';
-import Header from 'molecules/Header';
+import Header from 'src/components/organisms/Header';
 
 describe('Header', () => {
   it('should render', () => {

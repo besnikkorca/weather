@@ -1,6 +1,6 @@
 import { Component, ReactNode } from 'react';
 import Container from 'src/components/atoms/Container';
-import Header from 'src/components/molecules/Header';
+import Header from 'src/components/organisms/Header';
 import UseCityWeather from 'src/components/services/query/helpers/UseCityWeather';
 import getCityId from 'src/utils/getCityId/getCityId';
 

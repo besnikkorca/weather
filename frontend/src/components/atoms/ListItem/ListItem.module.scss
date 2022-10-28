@@ -1,0 +1,30 @@
+.listItem {
+  transition: all 0.2s ease-in-out;
+  font-size: 3rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  &:hover {
+    font-weight: bold;
+    color: var(--secondary-color);
+    transform: scale(1.02) translateY(-0.2rem);
+  }
+}
+
+.active {
+  cursor: default;
+  color: var(--primary-color);
+  font-family: 'Ogonek';
+  line-height: 1.75;
+  letter-spacing: 5.8px;
+  &:hover {
+    color: var(--primary-color);
+    transform: none;
+  }
+}
+
+.notActive {
+  font-family: 'Montserrat';
+  font-weight: 300;
+  line-height: 1.45;
+  letter-spacing: 3.5px;
+}

@@ -11,20 +11,25 @@ export default class WeatherAppTemplate extends Component<Props> {
     active: 'Ottawa',
   };
 
-  getCityId = (city: string) => {
-    return this.props.cities.find(({ name }) => name === city)?.id;
-  };
-
   setActive = (city: string) => {
     this.setState({ active: city });
   };
 
+  getCityId = () => {
+    return this.props.cities.find(({ name }) => name === this.state.active)?.id;
+  };
+
   render() {
+    const cityId = this.getCityId();
     return (
       <Container full>
         <Container maxWidth>
           <Header active={this.state.active} setActive={this.setActive} />
-          <WeatherForecast />
+          {cityId ? (
+            <WeatherForecast cityId={cityId} />
+          ) : (
+            <Container>Please select a city!</Container>
+          )}
         </Container>
       </Container>
     );

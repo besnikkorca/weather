@@ -1,5 +1,6 @@
 import { render } from '@testing-library/react';
 import WeatherAppTemplate from 'templates/WeatherAppTemplate';
+import mockUseQuery from '../services/query/mockUseQuery';
 
 const cities = [
   {
@@ -13,6 +14,14 @@ const cities = [
 ];
 
 describe('WeatherAppTemplate', () => {
+  beforeEach(() => {
+    mockUseQuery((key, fn, options) => ({
+      data: [],
+      isLoading: false,
+      isError: false,
+    }));
+  });
+
   it('should render', () => {
     const { container } = render(<WeatherAppTemplate cities={cities} />);
 
@@ -35,5 +44,9 @@ describe('WeatherAppTemplate', () => {
     const view = render(<WeatherAppTemplate cities={[cities[0]]} />);
 
     expect(view).toMatchSnapshot();
+  });
+
+  afterEach(() => {
+    jest.resetAllMocks();
   });
 });

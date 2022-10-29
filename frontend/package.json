@@ -28,6 +28,7 @@
     "start": "craco start",
     "build": "craco build",
     "test": "run-s eslint:check prettier:check jest",
+    "test-u": "run-s eslint:check prettier:check jest -- -u",
     "jest": "craco test --env=jsdom",
     "eject": "craco eject",
     "eslint:check": "eslint src/ --ext .js,.jsx,.ts,.tsx",

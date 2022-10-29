@@ -29,20 +29,25 @@ export default class Container extends Component<Props> {
       border,
       borderRadius,
       shadow,
+      className,
     } = this.props;
-    return classNames(styles.container, {
-      [styles.full]: full,
-      [styles.flexColumn]: flexColumn,
-      [styles.mainBG]: bg === BG.main,
-      [styles.transparentBG]: bg === BG.transparent,
-      [styles.maxWidthLarge]: maxWidth,
-      [styles.centerContent]: centerContent,
-      [styles.centerHorizontal]: centerHorizontal,
-      [styles.centerVertical]: centerVertical,
-      [styles.border]: border,
-      [styles.borderRadius]: borderRadius,
-      [styles.shadow]: shadow,
-    });
+    return classNames(
+      styles.container,
+      {
+        [styles.full]: full,
+        [styles.flexColumn]: flexColumn,
+        [styles.mainBG]: bg === BG.main,
+        [styles.transparentBG]: bg === BG.transparent,
+        [styles.maxWidthLarge]: maxWidth,
+        [styles.centerContent]: centerContent,
+        [styles.centerHorizontal]: centerHorizontal,
+        [styles.centerVertical]: centerVertical,
+        [styles.border]: border,
+        [styles.borderRadius]: borderRadius,
+        [styles.shadow]: shadow,
+      },
+      className
+    );
   };
 
   render() {

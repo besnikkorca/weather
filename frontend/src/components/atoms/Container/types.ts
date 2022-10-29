@@ -15,4 +15,5 @@ export type Props = {
   style?: React.CSSProperties | undefined;
   borderRadius?: boolean;
   shadow?: boolean;
+  className?: string;
 };

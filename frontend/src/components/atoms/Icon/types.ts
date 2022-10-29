@@ -1,8 +1,9 @@
 import { CSSProperties } from 'react';
+import { WeatherMain } from 'services/query/helpers/types';
 
 export interface Props {
-  name: 'cloud' | 'cloud-rain' | 'cloud-sun';
+  name: WeatherMain;
   style?: CSSProperties | undefined;
   size: 'normal' | 'medium' | 'large';
-  color?: 'main';
+  color?: 'main' | 'secondary';
 }

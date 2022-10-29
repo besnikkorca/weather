@@ -1,6 +1,12 @@
 import { Component } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCloud, faCloudRain, faCloudSun } from '@fortawesome/free-solid-svg-icons';
+import {
+  faCloud,
+  faCloudRain,
+  faCloudSun,
+  faSnowflake,
+  faSun,
+} from '@fortawesome/free-solid-svg-icons';
 import { Props } from './types';
 import styles from './Icon.module.scss';
 import classNames from 'classnames';
@@ -13,21 +19,32 @@ export default class Icon extends Component<Props> {
 
   getIconByName = () => {
     switch (this.props.name) {
-      case 'cloud':
+      case 'Clouds':
         return faCloud;
-      case 'cloud-rain':
+      case 'Rain':
         return faCloudRain;
-      case 'cloud-sun':
+      case 'Sun':
         return faCloudSun;
+      case 'Snow':
+        return faSnowflake;
+      case 'Clear':
+        return faSun;
       default:
-        return faCloud;
+        throw Error(`Not found - ${this.props.name}`);
     }
+  };
+
+  getIsSunny = () => {
+    const { name } = this.props;
+    return ['Sun', 'Clear'].includes(name);
   };
 
   getClassName = () => {
     const { size } = this.props;
+    const isSunny = this.getIsSunny();
     return classNames({
-      [styles.col]: this.props.color === 'main',
+      [styles.col]: this.props.color === 'main' && !isSunny,
+      [styles.colSec]: this.props.color === 'secondary' || isSunny,
       [styles.normal]: size === 'normal',
       [styles.medium]: size === 'medium',
       [styles.large]: size === 'large',

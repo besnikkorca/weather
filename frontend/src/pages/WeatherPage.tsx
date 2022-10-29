@@ -2,6 +2,7 @@ import { Component, ReactNode } from 'react';
 import Container from 'src/components/atoms/Container';
 import Header from 'src/components/organisms/Header';
 import UseCityWeather from 'src/components/services/query/helpers/UseCityWeather';
+import WeatherAppTemplate from 'src/components/templates/WeatherAppTemplate';
 import getCityId from 'src/utils/getCityId/getCityId';
 
 const supportedCities = [
@@ -30,6 +31,8 @@ export default class WeatherPage extends Component<{}, { active: string }> {
     const setActive = (city: string) => {
       this.setState({ active: city });
     };
+
+    return <WeatherAppTemplate cities={supportedCities} />;
 
     return (
       <Container full>

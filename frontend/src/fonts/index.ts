@@ -2,3 +2,4 @@
 // so I went for a similar font that is free
 import './Ogonek.scss';
 import './Montserrat';
+import './Teko';

@@ -10,9 +10,11 @@ interface Main {
   temp_kf: number;
 }
 
+export type WeatherMain = 'Rain' | 'Clouds' | 'Clear' | 'Snow' | 'Sun';
+
 interface Weather {
   id: number;
-  main: string;
+  main: WeatherMain;
   description: string;
   icon: string;
 }
@@ -39,7 +41,7 @@ interface Snow {
   '3h': number;
 }
 
-interface DayForecast {
+export interface DayForecast {
   dt: number;
   main: Main;
   weather: Weather[];

@@ -5,6 +5,9 @@ import WeatherList from 'molecules/WeatherList';
 import UseCityWeather from 'services/query/helpers/UseCityWeather';
 import { Props } from './types';
 import { DayForecast } from 'src/components/services/query/helpers/types';
+import styles from './WeatherForecast.module.scss';
+import Text from 'src/components/atoms/Text';
+import { TextSize } from 'src/components/atoms/Text/types';
 
 export default class WeatherForecast extends Component<Props> {
   getTodayForecast = (dayForecasts: DayForecast[] | undefined) => {
@@ -35,10 +38,26 @@ export default class WeatherForecast extends Component<Props> {
     return (
       <UseCityWeather cityId={cityId}>
         {(query) => {
+          const todaysForecast = this.getTodayForecast(query.data?.list);
           return (
-            <Container flexColumn border style={{ padding: 0 }} borderRadius shadow>
-              <WeatherCard forecast={this.getTodayForecast(query.data?.list)} />
-              <WeatherList forecasts={this.getUpcomingDaysForecast(query.data?.list) || []} />
+            <Container
+              flexColumn
+              border
+              borderRadius
+              shadow
+              className={styles.container}
+              centerContent={query.isLoading}
+            >
+              {query.isLoading ? (
+                <Text size={TextSize.large}>Loading...</Text>
+              ) : !todaysForecast ? (
+                <Text size={TextSize.large}>Error</Text>
+              ) : (
+                <>
+                  <WeatherCard forecast={todaysForecast} />
+                  <WeatherList forecasts={this.getUpcomingDaysForecast(query.data?.list) || []} />
+                </>
+              )}
             </Container>
           );
         }}

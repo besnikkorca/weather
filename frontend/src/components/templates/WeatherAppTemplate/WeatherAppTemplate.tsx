@@ -1,10 +1,9 @@
 import { Component } from 'react';
-import WeatherCard from 'molecules/WeatherCard';
-import WeatherList from 'molecules/WeatherList';
 import WeatherForecast from 'organisms/WeatherForecast';
 import Container from 'atoms/Container';
 import Header from 'organisms/Header';
 import { Props } from './types';
+import styles from './WeatherAppTemplate.module.scss';
 
 export default class WeatherAppTemplate extends Component<Props> {
   state = {
@@ -22,7 +21,7 @@ export default class WeatherAppTemplate extends Component<Props> {
   render() {
     const cityId = this.getCityId();
     return (
-      <Container full>
+      <Container full className={styles.contentWrapper}>
         <Container maxWidth>
           <Header active={this.state.active} setActive={this.setActive} />
           {cityId ? (

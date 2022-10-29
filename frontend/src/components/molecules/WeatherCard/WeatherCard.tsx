@@ -10,10 +10,6 @@ export default class WeatherCard extends Component<Props> {
   render() {
     const { forecast } = this.props;
 
-    if (!forecast) {
-      return null;
-    }
-
     return (
       <Container centerContent flexColumn className={styles.main}>
         <Text size={TextSize.large}>Today</Text>

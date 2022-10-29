@@ -16,9 +16,16 @@
 }
 
 .centerHorizontal {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
+  flex-direction: column;
+
+  @media only screen and (min-width: 768px) {
+    & {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: flex-start;
+    }
+  }
 }
 
 .flexColumn {
@@ -31,11 +38,22 @@
 
 .full {
   width: 100%;
-  height: 100vh;
+  height: 100%;
 }
 
 .maxWidthLarge {
-  max-width: 1270px;
+  max-width: 40rem;
+  @media only screen and (min-width: 480px) {
+    & {
+      max-width: 60rem;
+    }
+  }
+
+  @media only screen and (min-width: 768px) {
+    & {
+      max-width: 79.375rem;
+    }
+  }
 }
 
 .mainBG {

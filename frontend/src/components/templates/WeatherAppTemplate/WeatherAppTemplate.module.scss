@@ -1,0 +1,5 @@
+// This selector is more specific to override
+// the padding applied from the .container class
+div.contentWrapper {
+  padding: 4rem 0.5rem;
+}

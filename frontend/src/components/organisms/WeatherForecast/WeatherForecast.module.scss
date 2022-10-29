@@ -1,0 +1,8 @@
+.container {
+  padding: 0;
+  min-height: 48.75rem;
+  /* Extra Large screens ----------- */
+  @media only screen and (min-width: 1921px) {
+    min-height: 53.75rem;
+  }
+}

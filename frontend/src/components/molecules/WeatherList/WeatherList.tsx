@@ -10,14 +10,17 @@ import classNames from 'classnames';
 
 export default class WeatherList extends Component<Props> {
   dayName = (forecast: DayForecast) => {
-    return new Date(forecast.dt_txt).toLocaleDateString(navigator.language || 'en-US', {
-      weekday: 'long',
-    });
+    return new Date(forecast.dt_txt)
+      .toLocaleDateString(navigator.language || 'en-US', {
+        weekday: 'long',
+      })
+      .substring(0, 3);
   };
 
   getCardClassName(idx: number, forecasts: DayForecast[]): string | undefined {
     return classNames(styles.card, {
       [styles.firstCard]: idx === 0,
+      [styles.notFirstCard]: idx !== 0,
       [styles.lastCard]: idx === forecasts.length - 1,
     });
   }

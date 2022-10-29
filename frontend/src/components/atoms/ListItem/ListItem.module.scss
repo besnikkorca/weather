@@ -2,6 +2,7 @@
   transition: all 0.2s ease-in-out;
   font-size: 3rem;
   text-transform: uppercase;
+  text-align: center;
   cursor: pointer;
   &:hover {
     font-weight: bold;
@@ -12,6 +13,7 @@
 
 .active {
   cursor: default;
+  transition: none;
   color: var(--primary-color);
   font-family: 'Ogonek';
   line-height: 1.75;

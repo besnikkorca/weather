@@ -5,7 +5,7 @@ import { Props, BG } from './types';
 
 export default class Container extends Component<Props> {
   static defaultProps: Partial<Props> = {
-    bg: BG.main,
+    bg: BG.transparent,
     full: false,
     flexColumn: false,
     maxWidth: false,

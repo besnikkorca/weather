@@ -9,7 +9,7 @@ Object {
         class="container flexColumn transparentBG border borderRadius shadow container"
       >
         <p
-          class="default large weightNormal"
+          class="default large weightNormal color1"
         >
           Error
         </p>
@@ -21,7 +21,7 @@ Object {
       class="container flexColumn transparentBG border borderRadius shadow container"
     >
       <p
-        class="default large weightNormal"
+        class="default large weightNormal color1"
       >
         Error
       </p>

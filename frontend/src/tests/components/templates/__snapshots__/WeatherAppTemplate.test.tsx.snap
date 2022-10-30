@@ -14,7 +14,9 @@ Object {
           <header
             class="header"
           >
-            <nav>
+            <nav
+              class="nav"
+            >
               <ul
                 class="list"
               >
@@ -28,19 +30,28 @@ Object {
                 >
                   Moscow
                 </li>
-                <li
-                  class="listItem notActive"
-                >
-                  Tokyo
-                </li>
               </ul>
+              <div
+                class="toggle"
+              >
+                <label
+                  class="switch"
+                >
+                  <input
+                    type="checkbox"
+                  />
+                  <span
+                    class="slider round"
+                  />
+                </label>
+              </div>
             </nav>
           </header>
           <div
             class="container flexColumn transparentBG border borderRadius shadow container"
           >
             <p
-              class="default large weightNormal"
+              class="default large weightNormal color1"
             >
               Error
             </p>
@@ -59,7 +70,9 @@ Object {
         <header
           class="header"
         >
-          <nav>
+          <nav
+            class="nav"
+          >
             <ul
               class="list"
             >
@@ -73,19 +86,28 @@ Object {
               >
                 Moscow
               </li>
-              <li
-                class="listItem notActive"
-              >
-                Tokyo
-              </li>
             </ul>
+            <div
+              class="toggle"
+            >
+              <label
+                class="switch"
+              >
+                <input
+                  type="checkbox"
+                />
+                <span
+                  class="slider round"
+                />
+              </label>
+            </div>
           </nav>
         </header>
         <div
           class="container flexColumn transparentBG border borderRadius shadow container"
         >
           <p
-            class="default large weightNormal"
+            class="default large weightNormal color1"
           >
             Error
           </p>
@@ -161,32 +183,32 @@ Object {
           <header
             class="header"
           >
-            <nav>
+            <nav
+              class="nav"
+            >
               <ul
                 class="list"
+              />
+              <div
+                class="toggle"
               >
-                <li
-                  class="listItem active"
+                <label
+                  class="switch"
                 >
-                  Ottawa
-                </li>
-                <li
-                  class="listItem notActive"
-                >
-                  Moscow
-                </li>
-                <li
-                  class="listItem notActive"
-                >
-                  Tokyo
-                </li>
-              </ul>
+                  <input
+                    type="checkbox"
+                  />
+                  <span
+                    class="slider round"
+                  />
+                </label>
+              </div>
             </nav>
           </header>
           <div
             class="container transparentBG"
           >
-            Please select a city!
+            No cities available.
           </div>
         </div>
       </div>
@@ -202,32 +224,32 @@ Object {
         <header
           class="header"
         >
-          <nav>
+          <nav
+            class="nav"
+          >
             <ul
               class="list"
+            />
+            <div
+              class="toggle"
             >
-              <li
-                class="listItem active"
+              <label
+                class="switch"
               >
-                Ottawa
-              </li>
-              <li
-                class="listItem notActive"
-              >
-                Moscow
-              </li>
-              <li
-                class="listItem notActive"
-              >
-                Tokyo
-              </li>
-            </ul>
+                <input
+                  type="checkbox"
+                />
+                <span
+                  class="slider round"
+                />
+              </label>
+            </div>
           </nav>
         </header>
         <div
           class="container transparentBG"
         >
-          Please select a city!
+          No cities available.
         </div>
       </div>
     </div>
@@ -300,7 +322,9 @@ Object {
           <header
             class="header"
           >
-            <nav>
+            <nav
+              class="nav"
+            >
               <ul
                 class="list"
               >
@@ -309,24 +333,28 @@ Object {
                 >
                   Ottawa
                 </li>
-                <li
-                  class="listItem notActive"
-                >
-                  Moscow
-                </li>
-                <li
-                  class="listItem notActive"
-                >
-                  Tokyo
-                </li>
               </ul>
+              <div
+                class="toggle"
+              >
+                <label
+                  class="switch"
+                >
+                  <input
+                    type="checkbox"
+                  />
+                  <span
+                    class="slider round"
+                  />
+                </label>
+              </div>
             </nav>
           </header>
           <div
             class="container flexColumn transparentBG border borderRadius shadow container"
           >
             <p
-              class="default large weightNormal"
+              class="default large weightNormal color1"
             >
               Error
             </p>
@@ -345,7 +373,9 @@ Object {
         <header
           class="header"
         >
-          <nav>
+          <nav
+            class="nav"
+          >
             <ul
               class="list"
             >
@@ -354,24 +384,28 @@ Object {
               >
                 Ottawa
               </li>
-              <li
-                class="listItem notActive"
-              >
-                Moscow
-              </li>
-              <li
-                class="listItem notActive"
-              >
-                Tokyo
-              </li>
             </ul>
+            <div
+              class="toggle"
+            >
+              <label
+                class="switch"
+              >
+                <input
+                  type="checkbox"
+                />
+                <span
+                  class="slider round"
+                />
+              </label>
+            </div>
           </nav>
         </header>
         <div
           class="container flexColumn transparentBG border borderRadius shadow container"
         >
           <p
-            class="default large weightNormal"
+            class="default large weightNormal color1"
           >
             Error
           </p>

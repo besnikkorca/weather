@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Header should render 1`] = `
+exports[`Header should render correctly 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
@@ -8,7 +8,9 @@ Object {
       <header
         class="header"
       >
-        <nav>
+        <nav
+          class="nav"
+        >
           <ul
             class="list"
           >
@@ -27,7 +29,31 @@ Object {
             >
               Tokyo
             </li>
+            <li
+              class="listItem notActive"
+            >
+              London
+            </li>
+            <li
+              class="listItem notActive"
+            >
+              New York
+            </li>
           </ul>
+          <div
+            class="toggle"
+          >
+            <label
+              class="switch"
+            >
+              <input
+                type="checkbox"
+              />
+              <span
+                class="slider round"
+              />
+            </label>
+          </div>
         </nav>
       </header>
     </div>
@@ -36,7 +62,9 @@ Object {
     <header
       class="header"
     >
-      <nav>
+      <nav
+        class="nav"
+      >
         <ul
           class="list"
         >
@@ -55,7 +83,31 @@ Object {
           >
             Tokyo
           </li>
+          <li
+            class="listItem notActive"
+          >
+            London
+          </li>
+          <li
+            class="listItem notActive"
+          >
+            New York
+          </li>
         </ul>
+        <div
+          class="toggle"
+        >
+          <label
+            class="switch"
+          >
+            <input
+              type="checkbox"
+            />
+            <span
+              class="slider round"
+            />
+          </label>
+        </div>
       </nav>
     </header>
   </div>,

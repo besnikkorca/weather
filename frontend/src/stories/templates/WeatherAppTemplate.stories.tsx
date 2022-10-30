@@ -29,3 +29,17 @@ export const WithOneCity = Template.bind({});
 WithOneCity.args = {
   cities: [supportedCities[0]],
 };
+
+export const OtherCities = Template.bind({});
+OtherCities.args = {
+  cities: [
+    {
+      name: 'London',
+      id: getCityId('London', 'GB'),
+    },
+    {
+      name: 'New York',
+      id: getCityId('New York', 'US'),
+    },
+  ],
+};

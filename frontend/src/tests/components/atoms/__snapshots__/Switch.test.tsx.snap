@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Switch should render correctly 1`] = `
+<div>
+  <label
+    class="switch"
+  >
+    <input
+      checked=""
+      type="checkbox"
+    />
+    <span
+      class="slider round"
+    />
+  </label>
+</div>
+`;
+
+exports[`Switch should render correctly when checked 1`] = `
+<div>
+  <label
+    class="switch"
+  >
+    <input
+      checked=""
+      type="checkbox"
+    />
+    <span
+      class="slider round"
+    />
+  </label>
+</div>
+`;
+
+exports[`Switch should render correctly when not checked 1`] = `
+<div>
+  <label
+    class="switch"
+  >
+    <input
+      type="checkbox"
+    />
+    <span
+      class="slider round"
+    />
+  </label>
+</div>
+`;

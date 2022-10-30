@@ -6,7 +6,7 @@ exports[`WeatherCard renders correctly 1`] = `
     class="container flexColumn transparentBG centerContent main"
   >
     <p
-      class="default large weightNormal"
+      class="default large weightNormal color2"
     >
       Today
     </p>
@@ -32,13 +32,13 @@ exports[`WeatherCard renders correctly 1`] = `
         class="container transparentBG details"
       >
         <p
-          class="default noMargin xLarge weightNormal teko"
+          class="default noMargin xLarge weightNormal teko color3"
         >
           0
           °
         </p>
         <p
-          class="default noMargin large weightNormal"
+          class="default noMargin large weightNormal color4"
           style="margin-top: -5px;"
         >
           Rain

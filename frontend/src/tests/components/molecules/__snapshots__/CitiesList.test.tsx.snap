@@ -23,6 +23,16 @@ Object {
         >
           Tokyo
         </li>
+        <li
+          class="listItem notActive"
+        >
+          London
+        </li>
+        <li
+          class="listItem notActive"
+        >
+          New York
+        </li>
       </ul>
     </div>
   </body>,
@@ -44,6 +54,16 @@ Object {
         class="listItem notActive"
       >
         Tokyo
+      </li>
+      <li
+        class="listItem notActive"
+      >
+        London
+      </li>
+      <li
+        class="listItem notActive"
+      >
+        New York
       </li>
     </ul>
   </div>,
@@ -124,6 +144,16 @@ Object {
         >
           Tokyo
         </li>
+        <li
+          class="listItem notActive"
+        >
+          London
+        </li>
+        <li
+          class="listItem notActive"
+        >
+          New York
+        </li>
       </ul>
     </div>
   </body>,
@@ -145,6 +175,16 @@ Object {
         class="listItem notActive"
       >
         Tokyo
+      </li>
+      <li
+        class="listItem notActive"
+      >
+        London
+      </li>
+      <li
+        class="listItem notActive"
+      >
+        New York
       </li>
     </ul>
   </div>,
@@ -225,6 +265,16 @@ Object {
         >
           Tokyo
         </li>
+        <li
+          class="listItem notActive"
+        >
+          London
+        </li>
+        <li
+          class="listItem notActive"
+        >
+          New York
+        </li>
       </ul>
     </div>
   </body>,
@@ -246,6 +296,16 @@ Object {
         class="listItem active"
       >
         Tokyo
+      </li>
+      <li
+        class="listItem notActive"
+      >
+        London
+      </li>
+      <li
+        class="listItem notActive"
+      >
+        New York
       </li>
     </ul>
   </div>,
@@ -326,6 +386,16 @@ Object {
         >
           Tokyo
         </li>
+        <li
+          class="listItem notActive"
+        >
+          London
+        </li>
+        <li
+          class="listItem notActive"
+        >
+          New York
+        </li>
       </ul>
     </div>
   </body>,
@@ -347,6 +417,16 @@ Object {
         class="listItem notActive"
       >
         Tokyo
+      </li>
+      <li
+        class="listItem notActive"
+      >
+        London
+      </li>
+      <li
+        class="listItem notActive"
+      >
+        New York
       </li>
     </ul>
   </div>,

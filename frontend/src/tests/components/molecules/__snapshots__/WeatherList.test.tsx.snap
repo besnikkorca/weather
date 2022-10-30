@@ -6,15 +6,15 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="container transparentBG maxWidthLarge centerHorizontal container"
+        class="container transparentBG centerHorizontal container"
       >
         <div
-          class="container transparentBG centerVertical border card firstCard lastCard"
+          class="container transparentBG centerVertical border card firstCard"
         >
           <p
-            class="default normal weightNormal"
+            class="default normal weightNormal color1"
           >
-            Inv
+            Mon
           </p>
           <svg
             aria-hidden="true"
@@ -32,9 +32,39 @@ Object {
             />
           </svg>
           <p
-            class="default noMargin small weightNormal teko"
+            class="default noMargin small weightNormal teko color3"
           >
-            0
+            3
+            °
+          </p>
+        </div>
+        <div
+          class="container transparentBG centerVertical border card notFirstCard lastCard"
+        >
+          <p
+            class="default normal weightNormal color1"
+          >
+            Mon
+          </p>
+          <svg
+            aria-hidden="true"
+            class="svg-inline--fa fa-cloud-rain col normal"
+            data-icon="cloud-rain"
+            data-prefix="fas"
+            focusable="false"
+            role="img"
+            viewBox="0 0 512 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M96 320c-53 0-96-43-96-96c0-42.5 27.6-78.6 65.9-91.2C64.7 126.1 64 119.1 64 112C64 50.1 114.1 0 176 0c43.1 0 80.5 24.3 99.2 60c14.7-17.1 36.5-28 60.8-28c44.2 0 80 35.8 80 80c0 5.5-.6 10.8-1.6 16c.5 0 1.1 0 1.6 0c53 0 96 43 96 96s-43 96-96 96H96zm-6.8 52c1.3-2.5 3.9-4 6.8-4s5.4 1.5 6.8 4l35.1 64.6c4.1 7.5 6.2 15.8 6.2 24.3v3c0 26.5-21.5 48-48 48s-48-21.5-48-48v-3c0-8.5 2.1-16.9 6.2-24.3L89.2 372zm160 0c1.3-2.5 3.9-4 6.8-4s5.4 1.5 6.8 4l35.1 64.6c4.1 7.5 6.2 15.8 6.2 24.3v3c0 26.5-21.5 48-48 48s-48-21.5-48-48v-3c0-8.5 2.1-16.9 6.2-24.3L249.2 372zm124.9 64.6L409.2 372c1.3-2.5 3.9-4 6.8-4s5.4 1.5 6.8 4l35.1 64.6c4.1 7.5 6.2 15.8 6.2 24.3v3c0 26.5-21.5 48-48 48s-48-21.5-48-48v-3c0-8.5 2.1-16.9 6.2-24.3z"
+              fill="currentColor"
+            />
+          </svg>
+          <p
+            class="default noMargin small weightNormal teko color3"
+          >
+            2
             °
           </p>
         </div>
@@ -43,15 +73,15 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="container transparentBG maxWidthLarge centerHorizontal container"
+      class="container transparentBG centerHorizontal container"
     >
       <div
-        class="container transparentBG centerVertical border card firstCard lastCard"
+        class="container transparentBG centerVertical border card firstCard"
       >
         <p
-          class="default normal weightNormal"
+          class="default normal weightNormal color1"
         >
-          Inv
+          Mon
         </p>
         <svg
           aria-hidden="true"
@@ -69,9 +99,39 @@ Object {
           />
         </svg>
         <p
-          class="default noMargin small weightNormal teko"
+          class="default noMargin small weightNormal teko color3"
         >
-          0
+          3
+          °
+        </p>
+      </div>
+      <div
+        class="container transparentBG centerVertical border card notFirstCard lastCard"
+      >
+        <p
+          class="default normal weightNormal color1"
+        >
+          Mon
+        </p>
+        <svg
+          aria-hidden="true"
+          class="svg-inline--fa fa-cloud-rain col normal"
+          data-icon="cloud-rain"
+          data-prefix="fas"
+          focusable="false"
+          role="img"
+          viewBox="0 0 512 512"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M96 320c-53 0-96-43-96-96c0-42.5 27.6-78.6 65.9-91.2C64.7 126.1 64 119.1 64 112C64 50.1 114.1 0 176 0c43.1 0 80.5 24.3 99.2 60c14.7-17.1 36.5-28 60.8-28c44.2 0 80 35.8 80 80c0 5.5-.6 10.8-1.6 16c.5 0 1.1 0 1.6 0c53 0 96 43 96 96s-43 96-96 96H96zm-6.8 52c1.3-2.5 3.9-4 6.8-4s5.4 1.5 6.8 4l35.1 64.6c4.1 7.5 6.2 15.8 6.2 24.3v3c0 26.5-21.5 48-48 48s-48-21.5-48-48v-3c0-8.5 2.1-16.9 6.2-24.3L89.2 372zm160 0c1.3-2.5 3.9-4 6.8-4s5.4 1.5 6.8 4l35.1 64.6c4.1 7.5 6.2 15.8 6.2 24.3v3c0 26.5-21.5 48-48 48s-48-21.5-48-48v-3c0-8.5 2.1-16.9 6.2-24.3L249.2 372zm124.9 64.6L409.2 372c1.3-2.5 3.9-4 6.8-4s5.4 1.5 6.8 4l35.1 64.6c4.1 7.5 6.2 15.8 6.2 24.3v3c0 26.5-21.5 48-48 48s-48-21.5-48-48v-3c0-8.5 2.1-16.9 6.2-24.3z"
+            fill="currentColor"
+          />
+        </svg>
+        <p
+          class="default noMargin small weightNormal teko color3"
+        >
+          2
           °
         </p>
       </div>

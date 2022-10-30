@@ -14,6 +14,7 @@
     "jest": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "build:js": "cd frontend && yarn build",
+    "build:sb": "cd frontend && yarn build-storybook",
     "eslint:check": "eslint frontend/src/ --ext .js,.jsx,.ts,.tsx",
     "eslint:cache": "eslint frontend/src/ --ext .js,.jsx,.ts,.tsx --cache",
     "eslint:fix": "eslint frontend/src/ --ext .js,.jsx,.ts,.tsx --fix",

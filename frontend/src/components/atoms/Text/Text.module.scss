@@ -1,6 +1,22 @@
 .default {
 }
 
+.color1 {
+  color: var(--text-color);
+}
+
+.color2 {
+  color: var(--text-color-2);
+}
+
+.color3 {
+  color: var(--text-color-3);
+}
+
+.color4 {
+  color: var(--text-color-4);
+}
+
 .bold {
   font-weight: bold;
 }

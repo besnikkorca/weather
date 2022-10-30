@@ -15,6 +15,13 @@ export enum TextSize {
   large = 'large',
   xLarge = 'xLarge',
 }
+
+export enum TextColor {
+  color1 = 'color1',
+  color2 = 'color2',
+  color3 = 'color3',
+  color4 = 'color4',
+}
 export interface Props {
   noMargin?: boolean;
   children: React.ReactNode;
@@ -22,4 +29,5 @@ export interface Props {
   weight?: TextWeight;
   family?: TextFamily | undefined;
   style?: React.CSSProperties | undefined;
+  color?: TextColor;
 }

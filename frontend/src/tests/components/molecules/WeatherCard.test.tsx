@@ -1,7 +1,7 @@
 import { render } from '@testing-library/react';
 import WeatherCard from 'molecules/WeatherCard';
 import { DayForecast } from 'src/components/services/query/helpers/types';
-import forecast from './forecast.json';
+import forecast from 'src/tests/toydata/forecast.json';
 
 describe('WeatherCard', () => {
   it('should render', () => {

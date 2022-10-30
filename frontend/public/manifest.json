@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Devabler Weather",
+  "name": "Devabler Weather app for your 3 favorite cities",
   "icons": [
     {
       "src": "favicon.ico",

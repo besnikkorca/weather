@@ -2,7 +2,7 @@ import { Component } from 'react';
 import { Props } from './types';
 import Container from 'atoms/Container';
 import Text from 'atoms/Text';
-import { TextFamily, TextSize } from 'src/components/atoms/Text/types';
+import { TextColor, TextFamily, TextSize } from 'src/components/atoms/Text/types';
 import Icon from 'src/components/atoms/Icon';
 import { DayForecast } from 'src/components/services/query/helpers/types';
 import styles from './WeatherList.module.scss';
@@ -38,7 +38,7 @@ export default class WeatherList extends Component<Props> {
           >
             <Text size={TextSize.normal}>{this.dayName(forecast)}</Text>
             <Icon name={forecast.weather[0].main} />
-            <Text size={TextSize.small} family={TextFamily.teko} noMargin>
+            <Text color={TextColor.color3} size={TextSize.small} family={TextFamily.teko} noMargin>
               {Math.round(forecast.main.temp)}°
             </Text>
           </Container>

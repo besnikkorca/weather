@@ -1,15 +1,15 @@
-// import logo from './logo.svg';
 import './App.scss';
 import QueryClientProvider from './components/services/query/QueryClientProvider';
 import WeatherPage from './pages/WeatherPage';
 import './fonts';
+import { Component } from 'react';
 
-function App() {
-  return (
-    <QueryClientProvider>
-      <WeatherPage />
-    </QueryClientProvider>
-  );
+export default class App extends Component {
+  render() {
+    return (
+      <QueryClientProvider>
+        <WeatherPage />
+      </QueryClientProvider>
+    );
+  }
 }
-
-export default App;

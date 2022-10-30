@@ -3,7 +3,7 @@ import Container from 'atoms/Container';
 import styles from './WeatherCard.module.scss';
 import { Props } from './types';
 import Text from 'src/components/atoms/Text';
-import { TextFamily, TextSize } from 'src/components/atoms/Text/types';
+import { TextColor, TextFamily, TextSize } from 'src/components/atoms/Text/types';
 import Icon from 'src/components/atoms/Icon';
 
 export default class WeatherCard extends Component<Props> {
@@ -12,14 +12,16 @@ export default class WeatherCard extends Component<Props> {
 
     return (
       <Container centerContent flexColumn className={styles.main}>
-        <Text size={TextSize.large}>Today</Text>
+        <Text color={TextColor.color2} size={TextSize.large}>
+          Today
+        </Text>
         <Container centerHorizontal>
           <Icon name={forecast.weather[0].main} size="large" />
           <Container className={styles.details}>
-            <Text size={TextSize.xLarge} family={TextFamily.teko} noMargin>
+            <Text color={TextColor.color3} size={TextSize.xLarge} family={TextFamily.teko} noMargin>
               {Math.round(forecast.main.temp)}°
             </Text>
-            <Text size={TextSize.large} noMargin style={{ marginTop: -5 }}>
+            <Text color={TextColor.color4} size={TextSize.large} noMargin style={{ marginTop: -5 }}>
               {forecast.weather[0].main}
             </Text>
           </Container>

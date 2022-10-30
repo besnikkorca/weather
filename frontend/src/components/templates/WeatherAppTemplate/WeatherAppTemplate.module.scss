@@ -1,11 +1,7 @@
 // This selector is more specific to override
 // the padding applied from the .container class
 div.contentWrapper {
-  @media only screen and (min-width: 768px) {
-    & {
-      padding: 1rem 0.5rem;
-    }
-  }
+  padding: 4rem 0.5rem;
 
   @media only screen and (min-width: 1224px) {
     & {

@@ -10,18 +10,18 @@ const Template: ComponentStory<typeof Icon> = (args) => <Icon {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {
-  name: 'cloud',
+  name: 'Clouds',
   size: 'large',
 };
 
 export const Medium = Template.bind({});
 Medium.args = {
-  name: 'cloud-rain',
+  name: 'Rain',
   size: 'medium',
 };
 
 export const Normal = Template.bind({});
 Normal.args = {
-  name: 'cloud-sun',
+  name: 'Sun',
   size: 'normal',
 };

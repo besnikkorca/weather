@@ -1,16 +1,17 @@
 import { render } from '@testing-library/react';
 import WeatherCard from 'molecules/WeatherCard';
-import WeatherList from 'src/components/molecules/WeatherList';
+import { DayForecast } from 'src/components/services/query/helpers/types';
+import forecast from './forecast.json';
 
 describe('WeatherCard', () => {
   it('should render', () => {
-    const { container } = render(<WeatherList />);
+    const { container } = render(<WeatherCard forecast={forecast as DayForecast} />);
 
     expect(container).toBeInTheDocument();
   });
 
   it('renders correctly', () => {
-    const { container } = render(<WeatherCard />);
+    const { container } = render(<WeatherCard forecast={forecast as DayForecast} />);
 
     expect(container).toMatchSnapshot();
   });

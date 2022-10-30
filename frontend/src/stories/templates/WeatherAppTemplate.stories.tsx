@@ -1,5 +1,8 @@
 import { ComponentMeta, ComponentStory } from '@storybook/react';
+import QueryClientProvider from 'services/query/QueryClientProvider';
+import getCityId from 'src/utils/getCityId/getCityId';
 import WeatherAppTemplate from 'templates/WeatherAppTemplate';
+import supportedCities from 'utils/supportedCities';
 
 export default {
   title: 'Templates/WeatherAppTemplate',
@@ -7,21 +10,14 @@ export default {
 } as ComponentMeta<typeof WeatherAppTemplate>;
 
 const Template: ComponentStory<typeof WeatherAppTemplate> = (args) => (
-  <WeatherAppTemplate {...args} />
+  <QueryClientProvider>
+    <WeatherAppTemplate {...args} />
+  </QueryClientProvider>
 );
 
 export const Default = Template.bind({});
 Default.args = {
-  cities: [
-    {
-      id: 1,
-      name: 'Ottawa',
-    },
-    {
-      id: 2,
-      name: 'Moscow',
-    },
-  ],
+  cities: supportedCities,
 };
 
 export const WithNoCities = Template.bind({});
@@ -31,10 +27,5 @@ WithNoCities.args = {
 
 export const WithOneCity = Template.bind({});
 WithOneCity.args = {
-  cities: [
-    {
-      id: 1,
-      name: 'Ottawa',
-    },
-  ],
+  cities: [supportedCities[0]],
 };

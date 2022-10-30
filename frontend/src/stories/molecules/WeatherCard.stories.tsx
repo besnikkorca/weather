@@ -1,5 +1,7 @@
 import { ComponentMeta, ComponentStory } from '@storybook/react';
 import WeatherCard from 'molecules/WeatherCard';
+import { DayForecast } from 'src/components/services/query/helpers/types';
+import forecast from 'src/tests/toydata/forecast.json';
 
 export default {
   title: 'Molecules/WeatherCard',
@@ -9,4 +11,6 @@ export default {
 const Template: ComponentStory<typeof WeatherCard> = (args) => <WeatherCard {...args} />;
 
 export const Default = Template.bind({});
-Default.args = {};
+Default.args = {
+  forecast: forecast as DayForecast,
+};

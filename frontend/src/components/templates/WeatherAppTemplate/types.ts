@@ -1,3 +1,7 @@
+export interface City {
+  id: number;
+  name: string;
+}
 export interface Props {
-  cities: { id: number; name: string }[];
+  cities: City[];
 }

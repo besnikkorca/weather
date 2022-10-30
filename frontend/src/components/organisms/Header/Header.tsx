@@ -5,11 +5,11 @@ import { Props } from './types';
 
 export default class Header extends Component<Props> {
   render(): ReactNode {
-    const { active, setActive } = this.props;
+    const { cities, active, setActive } = this.props;
     return (
       <header className={styles.header}>
         <nav>
-          <CitiesList active={active} setActive={setActive} />
+          <CitiesList active={active} setActive={setActive} cities={cities} />
         </nav>
       </header>
     );

@@ -19,15 +19,19 @@ export default class WeatherAppTemplate extends Component<Props> {
   };
 
   render() {
+    const { cities } = this.props;
     const cityId = this.getCityId();
     return (
       <Container full className={styles.contentWrapper}>
         <Container maxWidth>
-          <Header active={this.state.active} setActive={this.setActive} />
+          <Header active={this.state.active} setActive={this.setActive} cities={cities} />
           {cityId ? (
             <WeatherForecast cityId={cityId} />
           ) : (
-            <Container>Please select a city!</Container>
+            <Container>
+              {/* TODO: Handle these scenarios properly with a better design */}
+              {cities.length === 0 ? 'No cities available.' : 'Please select a city!'}
+            </Container>
           )}
         </Container>
       </Container>

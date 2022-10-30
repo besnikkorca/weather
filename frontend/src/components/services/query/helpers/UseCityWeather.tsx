@@ -1,6 +1,6 @@
 import { Component } from 'react';
 import { UseQueryResult } from 'react-query';
-import { REACT_APP_OPEN_WEATHER_KEY, REACT_APP_WEATHER_API_URL } from 'src/config';
+import { OPEN_WEATHER_KEY, WEATHER_API_URL } from 'src/config';
 import UseQuery from '../UseQuery';
 import { Forecast } from './types';
 
@@ -19,14 +19,10 @@ export default class UseCityWeather extends Component<Props> {
     const { cityId, units } = this.props;
     return (
       <UseQuery<Forecast>
-        queryKey={[
-          REACT_APP_WEATHER_API_URL,
-          'data/2.5/forecast',
-          { cityId, REACT_APP_OPEN_WEATHER_KEY },
-        ]}
+        queryKey={[WEATHER_API_URL, 'data/2.5/forecast', { cityId, OPEN_WEATHER_KEY }]}
         fn={({ signal }) =>
           fetch(
-            `${REACT_APP_WEATHER_API_URL}/data/2.5/forecast?id=${cityId}&units=${units}&appid=${REACT_APP_OPEN_WEATHER_KEY}`,
+            `${WEATHER_API_URL}/data/2.5/forecast?id=${cityId}&units=${units}&appid=${OPEN_WEATHER_KEY}`,
             {
               signal,
             }

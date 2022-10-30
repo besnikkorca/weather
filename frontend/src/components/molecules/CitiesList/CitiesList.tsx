@@ -5,11 +5,16 @@ import { Props } from './types';
 
 export default class CitiesList extends Component<Props> {
   render() {
+    const { cities } = this.props;
     return (
       <List>
-        {['Ottawa', 'Moscow', 'Tokyo'].map((city) => (
-          <ListItem key={city} active={city === this.props.active} onClick={this.props.setActive}>
-            {city}
+        {cities.map(({ name: cityName }) => (
+          <ListItem
+            key={cityName}
+            active={cityName === this.props.active}
+            onClick={this.props.setActive}
+          >
+            {cityName}
           </ListItem>
         ))}
       </List>

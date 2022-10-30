@@ -28,7 +28,7 @@ export default class WeatherList extends Component<Props> {
   render() {
     const { forecasts } = this.props;
     return (
-      <Container centerHorizontal maxWidth className={styles.container}>
+      <Container centerHorizontal className={styles.container}>
         {forecasts.map((forecast, idx) => (
           <Container
             key={forecast.dt_txt}

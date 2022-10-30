@@ -1,5 +1,15 @@
 .main {
-  padding: 0rem;
+  @media only screen and (min-width: 768px) {
+    & {
+      padding: 1.5rem 0 3rem;
+    }
+  }
+
+  @media only screen and (min-width: 1224px) {
+    & {
+      padding: 1.5rem 0 2rem;
+    }
+  }
   /* Extra Large screens ----------- */
   @media only screen and (min-width: 1921px) {
     & {

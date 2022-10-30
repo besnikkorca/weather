@@ -5,7 +5,6 @@ interface City {
   name: string;
   state: string;
   country: string;
-  coord: { lon: number; lat: number };
 }
 
 export default function getCityId(name: string, country: string, state?: string) {
